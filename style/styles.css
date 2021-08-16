@@ -102,8 +102,6 @@ h1 {
 .skill-card {
     display: flex;
     background-color: whitesmoke;
-    /*height: 350px;
-    width: 500px;*/
     vertical-align: middle;
     margin: 10px;
     flex-basis: 40%;
