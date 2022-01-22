@@ -33,6 +33,14 @@ ul, li {
     padding-right: 10px;
     padding-left: 10px;*/
 }
+.section {
+   padding-top: 0px;
+}
+.section-title{
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /*
  グローバルナビ, ヘッダー画像
@@ -53,14 +61,13 @@ ul, li {
 }
 h1 {
     padding-top: 70px;
+    padding-bottom: 0px;
     margin: 0px;
-
 }
 .h1-img {
     padding-top: 0px;
     width: 100%;
 }
-
 
 /*
  プロフィール
@@ -89,7 +96,7 @@ h1 {
 #Skill .card-wrapper {
     width: 80%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 5px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -107,20 +114,23 @@ h1 {
     flex-basis: 40%;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    /*width: 200px;*/
 }
 .skill-desc p {
     margin-top: 0px;
+    font-size: 15px;
 }
 .skill-table {
-    margin: 0 auto;
+    margin: 5px;
 }
 .skill-table th,td {
-    width: 150px;
+    width: 160px;
     font-size: 15px;
     text-align: center;
-    vertical-align: baseline;
     padding: 5px;
-
+}
+.skill-table td {
+    font-size: 13px;
 }
 
 /*
