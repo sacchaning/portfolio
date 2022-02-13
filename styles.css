@@ -1,0 +1,214 @@
+/* css Document */
+body {
+    font-family: 'メイリオ','Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+    color: black;
+    font-size: 20px;
+    line-height: normal; /*行間*/
+    letter-spacing: normal; /*文字間*/
+    word-break: break-all; /*改行指定*/
+    margin: 0px;
+    background-color:white;
+}
+img{
+    max-width: 100%;
+}
+ul, li {
+    list-style: none;
+}
+
+/*
+ 全体
+*/
+#wrapper {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.inner {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    /*padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;*/
+}
+.section {
+   padding-top: 0px;
+}
+.section-title{
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*
+ グローバルナビ, ヘッダー画像
+*/
+#gnavi {
+    width: 100%;
+    height: 70px;
+    background-color:whitesmoke;
+    position: fixed;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#gnavi ul {
+    padding: 10px;
+}
+h1 {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.h1-img {
+    padding-top: 0px;
+    width: 100%;
+}
+
+/*
+ プロフィール
+*/
+.two-column-wrapper {
+  display:  flex;
+  margin: 10px;
+
+}
+.two-column-desc {
+    text-align: left;
+    margin: 10px;
+}
+.two-column-image img {
+    width: 60%;
+    margin: 10px;
+}
+.two-column-desc p {
+  margin: 0 auto;
+}
+
+
+/*
+ スキル
+*/
+#Skill .card-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+}
+.skill-card {
+    display: flex;
+    background-color: whitesmoke;
+    vertical-align: middle;
+    margin: 10px;
+    flex-basis: 40%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /*width: 200px;*/
+}
+.skill-desc p {
+    margin-top: 0px;
+    font-size: 15px;
+}
+.skill-table {
+    margin: 5px;
+}
+.skill-table th,td {
+    width: 160px;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+.skill-table td {
+    font-size: 13px;
+}
+
+/*
+ ワーク
+*/
+#Study .card-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+}
+.study-card {
+    display: flex;
+    background-color: whitesmoke;
+    vertical-align: middle;
+    margin: 10px;
+    flex-basis: 40%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+}
+.study-image {
+    object-fit: scale-down;
+   
+}
+.card-caption-info, .card-caption-url {
+    font-size: 15px;
+}
+
+/*
+ フッダー
+*/
+#footer {
+    background-color: whitesmoke;
+    text-align: center;
+}
+.contact-form{
+    width: 50%;
+    margin: 0 auto;
+}
+.footer-link ul {
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    color: black;
+}
+.copyright {
+    margin: 0px;
+    font-size: 15px;
+}
+
+/*
+ レスポンシブ
+*/
+@media screen and (max-width: 767px) {
+    .study-card {
+      flex-basis: 100%;
+    }
+ 
+    .card-wrapper {
+      width: 100%;
+    }
+    .skill-card {
+      flex-basis: 100%;
+    }
+    .skill-desc {
+      flex-basis: calc(100% - 45px - 10px);
+    }
+
+    .contact-form {
+      width: 80%;
+    }
+  }
