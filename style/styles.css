@@ -136,7 +136,7 @@ h1 {
 /*
  ワーク
 */
-#Works .card-wrapper {
+#Study .card-wrapper {
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
@@ -149,7 +149,7 @@ h1 {
     -ms-flex-pack: justify;
     justify-content: space-evenly;
 }
-.works-card {
+.study-card {
     display: flex;
     background-color: whitesmoke;
     vertical-align: middle;
@@ -160,7 +160,7 @@ h1 {
     flex-direction: column;
     padding: 20px;
 }
-.works-image {
+.study-image {
     object-fit: scale-down;
    
 }
@@ -194,7 +194,7 @@ h1 {
  レスポンシブ
 */
 @media screen and (max-width: 767px) {
-    .works-card {
+    .study-card {
       flex-basis: 100%;
     }
  
